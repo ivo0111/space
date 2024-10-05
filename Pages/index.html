@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exoplanetas: Aventura Espacial</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="..\estilo.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Exoplanetas: Aventura Espacial</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" download="Tic-Tac-Toe.png" href="@Todo">
+                Descargar Juego
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container main-content" style="z-index: 0;">
+      <h1 class="text-center mb-4">
+        Bienvenidos a la Aventura de los Exoplanetas
+      </h1>
+
+      <div class="stars-container">
+        <div class="stars" id="stars"></div>
+      </div>
+
+      <img
+        src="https://via.placeholder.com/800x400.png?text=Imagen+de+Exoplaneta"
+        alt="Exoplaneta"
+        class="space-image"
+      />
+
+      <h2>Who are we?</h2>
+      <p>
+        We are Space Hams! A group participating in the NASA space apps hackathon that chose to do the challenge “Chronicles of the exoplanets”. In this challenge we have to create didactic material oriented to education about exoplanets.
+      </p>
+
+      <h2>Nuestra Misión</h2>
+      <p>
+        Hemos creado una serie de juegos educativos donde te convertirás en un
+        detective de exoplanetas. A través de pistas y datos científicos,
+        tendrás que determinar si lo que observas es un exoplaneta y, si es así,
+        descubrir sus características únicas.
+      </p>
+
+      <h2>Explora y Aprende</h2>
+      <p>
+        Desde el nivel jardín hasta el universitario, nuestros juegos están
+        diseñados para desafiar tu mente y expandir tu conocimiento sobre el
+        universo. ¡Prepárate para una aventura cósmica de aprendizaje!
+      </p>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function createStars() {
+        const starsContainer = document.getElementById("stars");
+        const numberOfStars = 100;
+        for (let i = 0; i < numberOfStars; i++) {
+          const star = document.createElement("div");
+          star.className = "star";
+          star.style.left = `${Math.random() * 100}%`;
+          star.style.top = `${Math.random() * 100}%`;
+          star.style.width = `${Math.random() * 3 + 5}px`;
+          star.style.height = star.style.width;
+          star.style.animationDuration = `${Math.random() * 3 + 2}s`;
+          star.style.animationDelay = `${Math.random() * 3}s`;
+          starsContainer.appendChild(star);
+        }
+      }
+
+      window.onload = createStars();
+    </script>
+  </body>
+</html>
