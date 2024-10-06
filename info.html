@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exoplanetas: Aventura Espacial</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Exoplanetas: Aventura Espacial</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="info.html"
+                >Información</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                download="@Todo"
+                href="@Todo"
+              >
+                Descargar Juego
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container main-content" style="z-index: 0">
+      <h1 class="text-center mb-4">Exoplanets</h1>
+
+      <div class="stars-container">
+        <div class="stars" id="stars"></div>
+      </div>
+
+      <img src="exo.webp" alt="Exoplaneta" class="space-image" />
+
+      <h2>What is an exoplanet?</h2>
+      <p>
+        An exoplanet is a planet located beyond our solar system. They generally
+        orbit around another star, but there are also some that float freely in
+        space, known as rogue planets. More than 5,600 exoplanets have been
+        confirmed out of the billions that exist.
+      </p>
+      <h2>Most well-known methods for discovering exoplanets</h2>
+      <ol>
+        <li>
+          Astrometry: The orbit of a planet can cause a star to move slightly in
+          relation to nearby stars in the sky, and the observation of this
+          effect is known as astrometry. Scientists must take a series of images
+          of a star and some of the other stars nearby in the sky. In each
+          image, they compare the distances between these reference stars and
+          the target star. Astrometry requires extremely precise optics and is
+          particularly challenging to perform from the Earth's surface because
+          our atmosphere distorts and refracts light.
+        </li>
+        <li>
+          Transit: When a planet passes directly between a star and an
+          observer's line of sight, it blocks a small portion of the star's
+          light, thereby reducing its apparent brightness. Sensitive instruments
+          can detect this periodic drop in brightness. From the period and depth
+          of the transits, the orbit and size of the companion planets can be
+          calculated.
+        </li>
+        <li>
+          Imaging: Taking actual photographs of exoplanets is extremely
+          difficult due to how much brighter a star is compared to its planet.
+          However, specialized optics and clever observation methods have made
+          it possible to obtain a handful of images of exoplanets, and there is
+          potential for many more to be captured in the future. One method of
+          obtaining direct images, coronagraphy, uses a special masking device
+          to block the light from a star so that the orbiting planets can be
+          seen more clearly. A similar method involves deploying a giant
+          starshade to block the glare of a star, precisely positioned in space
+          between a nearby telescope and a star that hosts an exoplanetary
+          system.
+        </li>
+        <li>
+          Imaging: Taking actual photographs of exoplanets is extremely
+          difficult due to how much brighter a star is compared to its planet.
+          However, specialized optics and clever observation methods have made
+          it possible to obtain a handful of images of exoplanets, and there is
+          potential for many more to be captured in the future. One method of
+          obtaining direct images, coronagraphy, uses a special masking device
+          to block the light from a star so that the orbiting planets can be
+          seen more clearly. A similar method involves deploying a giant
+          starshade to block the glare of a star, precisely positioned in space
+          between a nearby telescope and a star that hosts an exoplanetary
+          system.
+        </li>
+        <li>
+          Microlensing: When a planet passes in front of a star along our line
+          of sight, the planet's gravity acts like a lens. This focuses light
+          rays and causes a strong temporary increase in brightness and a change
+          in the apparent position of the star. Astronomers can use the
+          gravitational microlensing effect to find objects that do not emit
+          light or are otherwise undetectable.
+        </li>
+        <li>
+          Radial velocity: The radial velocity method measures slight changes in
+          a star's speed as the star and planet move around their common center
+          of mass. Astronomers can detect these variations by analyzing the
+          spectrum of the star's light. In an effect known as the Doppler shift,
+          the light waves from a star moving toward us shift toward the blue end
+          of the spectrum. If the star is moving away, the light waves shift
+          toward the red end of the spectrum. This occurs because the waves are
+          compressed when the star approaches the observer and expand when the
+          star moves away.
+        </li>
+      </ol>
+    <h2>
+        Types of stars:
+    </h2>
+    <ol>
+        <li>
+            Type G: These are yellow dwarfs, meaning stars with medium temperatures and brightness intensity. They possess spectral lines indicating the presence of hydrogen and helium primarily. An example of a G-type star is our Sun.
+        </li>
+        <li>
+            Type M: These are red dwarfs, meaning they are more common, smaller, and cooler stars, with low luminosity and a long lifespan. An example is Proxima Centauri, the closest star to the Sun.
+        </li>
+        <li>
+            Type K: These are orange dwarfs, meaning they are brighter than red dwarfs but less bright than yellow ones. They have lifespans of billions of years, longer than G-type stars, due to their lower hydrogen fusion rate. Some examples are Alpha Centauri B and Arcturus.
+        </li>
+        <li>
+            Type K: These are orange dwarfs, meaning they are brighter than red dwarfs but less bright than yellow ones. They have lifespans of billions of years, longer than G-type stars, due to their lower hydrogen fusion rate. Some examples are Alpha Centauri B and Arcturus.
+        </li>
+        <li>
+            Type K: These are orange dwarfs, meaning they are brighter than red dwarfs but less bright than yellow ones. They have lifespans of billions of years, longer than G-type stars, due to their lower hydrogen fusion rate. Some examples are Alpha Centauri B and Arcturus.
+        </li>
+        <li>
+            Type K: These are orange dwarfs, meaning they are brighter than red dwarfs but less bright than yellow ones. They have lifespans of billions of years, longer than G-type stars, due to their lower hydrogen fusion rate. Some examples are Alpha Centauri B and Arcturus.
+        </li>
+        <li>
+            Type K: These are orange dwarfs, meaning they are brighter than red dwarfs but less bright than yellow ones. They have lifespans of billions of years, longer than G-type stars, due to their lower hydrogen fusion rate. Some examples are Alpha Centauri B and Arcturus.
+        </li>
+        <li>T
+            ype F: These are white stars, meaning they are remnants of stars that have exhausted their fuel. They are dense and shine from residual heat, which is why their luminosity can vary. They have spectral lines that demonstrate the presence of hydrogen and helium, as well as other elements like calcium and metals. Compared to other stars, they have a short lifespan, of 2 to 4 billion years. In this group are stars like Procyon A and Alpha Aurigae (Capella A).
+        </li>
+    </ol>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function createStars() {
+        const starsContainer = document.getElementById("stars");
+        const numberOfStars = 100;
+        for (let i = 0; i < numberOfStars; i++) {
+          const star = document.createElement("div");
+          star.className = "star";
+          star.style.left = `${Math.random() * 100}%`;
+          star.style.top = `${Math.random() * 100}%`;
+          star.style.width = `${Math.random() * 3 + 5}px`;
+          star.style.height = star.style.width;
+          star.style.animationDuration = `${Math.random() * 3 + 2}s`;
+          star.style.animationDelay = `${Math.random() * 3}s`;
+          starsContainer.appendChild(star);
+        }
+      }
+
+      window.onload = createStars();
+    </script>
+  </body>
+</html>
