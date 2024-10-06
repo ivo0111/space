@@ -7,6 +7,9 @@ html {
     color: #ffffff;
     overflow-x: hidden;
 }
+li {
+    margin-bottom: 10px;
+}
 
 
 
