@@ -1,105 +1,63 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Exoplanetas: Aventura Espacial</title>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Exoplanetas: Aventura Espacial</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >Inicio</a
-              >
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="info.html">Información</a>
-              </li>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                download="@Todo"
-                href="@Todo"
-              >
-                Descargar Juego
-              </a>
-            </li>
-          </ul>
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Solar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Modal para mostrar la información del planeta -->
+    <div id="infoCuadro" class="modal">
+        <div class="modal-content">
+            <span id="cerrarBtn" class="close">&times;</span>
+            <h2 id="nombrePlaneta"></h2>
+            <!--       <p id="infoTexto"></p> -->
+            <ul id="datosAdicionales"></ul>
         </div>
-      </div>
-    </nav>
-
-    <div class="container main-content" style="z-index: 0">
-      <h1 class="text-center mb-4">
-        Welcome to the Exoplanet Adventure
-      </h1>
-
-      <div class="stars-container">
-        <div class="stars" id="stars"></div>
-      </div>
-
-      <img src="exo.webp" alt="Exoplaneta" class="space-image" />
-
-      <h2>Who are we?</h2>
-      <p>
-        We are Space Hams! A group participating in the NASA space apps
-        hackathon that chose to do the challenge “Chronicles of the exoplanets”.
-        In this challenge we have to create didactic material oriented to
-        education about exoplanets.
-      </p>
-
-      <h2>Our mission</h2>
-      <p>
-        We have created a series of educational games where you will become a NASA helper. Through mini-games and scientific facts, we seek to expand the knowledge about exoplanets and that students can have fun learning.
-      </p>
+    </div>
+    <div class="stars-container"></div>
+    <div class="stars" id="stars"></div>
+    <div class="sistema-solar">
+        <div class="tierra"></div>
+        <div class="planeta Kepler1869c"></div>
+        <div class="planeta LaestrelladeTeegarde"></div>
+        <div class="planeta TOI1443d"></div>
+        <div class="planeta Kepler62f"></div>
+        <div class="planeta Cadera8152b"></div>
+        <div class="planeta HD123606f"></div>
+        <div class="planeta wasp32b"></div>
+        <div class="planeta HatP2c"></div>
     </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      function createStars() {
-        const starsContainer = document.getElementById("stars");
-        const numberOfStars = 100;
-        for (let i = 0; i < numberOfStars; i++) {
-          const star = document.createElement("div");
-          star.className = "star";
-          star.style.left = `${Math.random() * 100}%`;
-          star.style.top = `${Math.random() * 100}%`;
-          star.style.width = `${Math.random() * 3 + 5}px`;
-          star.style.height = star.style.width;
-          star.style.animationDuration = `${Math.random() * 3 + 2}s`;
-          star.style.animationDelay = `${Math.random() * 3}s`;
-          starsContainer.appendChild(star);
-        }
-      }
+    <div class="lineas locas">
+        <div class="linea1 linea"></div>
+        <div class="linea2 linea"></div>
+        <div class="linea3 linea"></div>
+        <div class="linea4 linea"></div>
+        <div class="linea5 linea"></div>
+        <div class="linea6 linea"></div>
+        <div class="linea7 linea"></div>
+        <div class="linea8 linea"></div>
+    </div>
 
-      window.onload = createStars();
-    </script>
-  </body>
+    <!-- Modal para mostrar la información del planeta -->
+    <!--     <div id="infoCuadro" class="modal"> -->
+    <!--         <div class="modal-content"> -->
+    <!--           <span id="cerrarBtn" class="close">&times;</span> -->
+    <!--             <p id="infoTexto"> -->
+    <!--            </p> -->
+    <!--        </div> -->
+    <!--      </div> -->
+
+    <script src="script.js"></script>
+</body>
+
 </html>
